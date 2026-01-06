@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  grid-template-columns: 100px repeat(2, 200px);
+  grid-template-rows: 50px 50px 50px;
+  gap: 10px;
+  background-color: aqua;
+  padding: 20px;
+  grid-template-areas:
+    "celda1 celda1 celda1"
+    "celda2 celda3 celda4"
+    "celda2 celda5 celda6";
+}
+
+.container div {
+  background-color: blueviolet;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container div:first-child {
+  grid-area: celda1;
+}
+
+.container :nth-child(2) {
+  grid-area: celda2;
+}
+
+.container :nth-child(3) {
+  grid-area: celda3;
+}
+
+.container :nth-child(4) {
+  grid-area: celda4;
+}
+
+.container :nth-child(5) {
+  grid-area: celda5;
+}
+
+.container :nth-child(6) {
+  grid-area: celda6;
+}
