@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.container div {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+}
+
+.container div:nth-child(1) {
+  grid-column: 2/4;
+  background-color: yellow;
+}
+.container div:nth-child(3) {
+  grid-column: 2/4;
+}
+
+.container div:nth-child(4) {
+  grid-column: 1/4;
+  background-color: grey;
+}
