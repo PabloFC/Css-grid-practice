@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  background-color: aqua;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px;
+  gap: 10px;
+}
+
+.container div {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container div:first-child {
+  grid-column: 1/4;
+}
+
+.container :nth-child(2) {
+  align-items: start;
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
